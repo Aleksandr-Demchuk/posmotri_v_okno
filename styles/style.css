@@ -71,7 +71,8 @@ ol {
 }
 
 .result__video {
-  block-size: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -118,12 +119,6 @@ ol {
 
 .content__accent {
   color: #545050;
-}
-
-.content__card-link {
-  display: block;
-  text-decoration: none;
-  color: #fff;
 }
 
 .content__video-card-title {
@@ -198,4 +193,102 @@ ol {
   border: 1px solid #fff;
   flex-shrink: 0;
   margin-right: 5px;
+  position: relative;
 }
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 74px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.search-form__label:has(:focus-visible) {                              
+  outline: 1px solid #fff;
+  outline-offset: 1px; 
+}
+
+.search-form__pseudo-checkbox::before {                                                 
+  content: "";
+  display: none;
+  width: 15px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.content__card-link_current {                              
+  background: #545050;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link:hover {                                   
+  text-decoration: underline;
+}
+
+.content__card-link:focus {                                
+  outline: 0;
+}
+
+.content__card-link:focus-visible {                                    
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  margin: 2px;
+}
+
+.search-form__checkbox:active {
+  display: block;
+}
+
+.button:active {                                                                 
+  background: #545050;
+}
+
+.button:focus-visible {                                                           
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:hover {                                                                  
+  text-decoration: underline;
+}
+
+.search-form__textfield:focus {                                        
+  outline: 0;
+}
+
+.search-form__textfield:active {                                        
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+

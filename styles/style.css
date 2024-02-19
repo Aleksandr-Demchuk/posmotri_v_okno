@@ -86,11 +86,11 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  /* flex-shrink: 0; */
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 }
 
 .content__video-card-description-container {
@@ -150,3 +150,52 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 } 
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__label {
+  display: flex;
+  width:fit-content;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+}
+
+.search-form__textfield {
+  min-width: 226px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  line-height: 21px;
+  border-top: 1px solid #fff;
+  border-right: 0;
+  border-bottom: 1px solid #fff;
+  border-left: 0;
+  color: rgba(255, 255, 255 / 0.7);
+  background: transparent;
+  appearance: none;
+  padding: 2px 14px 2px 0;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  flex-shrink: 0;
+  margin-right: 5px;
+}

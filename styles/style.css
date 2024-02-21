@@ -66,7 +66,7 @@ ol {
 }
 
 .result__video-container {
-  max-width: 711px;
+  width: 711px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
@@ -239,6 +239,7 @@ ol {
   content: "";
   display: none;
   width: 15px;
+  height: 15px;
   margin: auto;
   background-color: #fff;
 }
